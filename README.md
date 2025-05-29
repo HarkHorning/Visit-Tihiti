@@ -1,5 +1,5 @@
 # Visit-Tihiti
-Assignment for a design class.
+Assignment for a design class. 
 
 
 ## Include
