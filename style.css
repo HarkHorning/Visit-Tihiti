@@ -4,9 +4,13 @@
     font-family: 'Nunito';font-size: 22px;
     text-decoration: none;
 }
+h1 {
+    font-size: 1.75rem;
+}
 :root {
-    --font_color: black;
+    --font_color: rgb(14, 14, 14);
     --development_background: pink;
+    --background_grey: #D9D9D9;
 }
 body {
     display: flex;
@@ -19,14 +23,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 1400px;
-    gap: 4px;
+    /* width: full; */
+    gap: 0.75rem;
 }
 .navigation {
     display: flex;
     flex-direction: column;
     width: full;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    gap: 0.75rem;
+    padding: 1rem 1rem 0.25rem 1rem;
 }
 .navigation_section {
     display: flex;
@@ -42,6 +47,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
+    color: var(--font_color);
 }
 .page_link {
     color: var(--font_color);
@@ -86,8 +92,18 @@ body {
     gap: 1rem;
 }
 .cards {
-    padding: 2rem;
-    border: 1px solid var(--development_background);
+    position: relative;
+    border-radius: 8px;
+}
+.vert_image {
+    max-width: 350px;
+}
+.cards_title_para {
+    position: absolute;
+    right: 50%;
+    bottom: 28%;
+    transform: translate(50%, 50%);
+    width: 85%;
 }
 
 
@@ -147,6 +163,7 @@ body {
 
 /* Footer */
 footer { /* Footer */
+    background-color: var(--background_grey);
     width: full;
     padding: 2rem;
     display: grid;
