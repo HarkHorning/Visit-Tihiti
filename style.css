@@ -9,7 +9,7 @@ h1 {
 }
 :root {
     --font_color: rgb(14, 14, 14);
-    --development_background: pink;
+    --development_background: rgb(255, 106, 131);
     --background_grey: #D9D9D9;
 }
 body {
@@ -38,9 +38,6 @@ body {
     justify-content: space-between;
     align-items: end;
     width: full;
-}
-.secondary_nav {
-    /* background-color: var(--development_background); */
 }
 .header {
     font-size: 1.5rem;
@@ -155,10 +152,20 @@ body {
     gap: 4px;
 }
 .input_style {
-    min-width: 50vw;
+    min-width: full;
     padding: 4px 0px 4px 8px;
     margin-bottom: 1rem;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* Footer */
